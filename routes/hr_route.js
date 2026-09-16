@@ -4,7 +4,7 @@ router.get("/viewemployees",(req,res)=>{
     res.send("View employees route");
 });
 router.post("/assign-task",(req,res)=>{
-    res.send("assign task route");
+    res.send("assign task route called");
 })
 // localhost:3000/api/hr/viewtasks => GET
 // localhost:3000/api/hr/deleteEmp => Delete
