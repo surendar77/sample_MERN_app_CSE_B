@@ -19,11 +19,5 @@ router.delete("/deleteemployee/:id",async (req,res)=>{
         res.send("no user found");
     }
 })
-//in postman => choose delete method
-//localhost:3000/api/hr/deleteemployee/6ab0d4278b577c7452bd4246
-
-
-
-
 
 module.exports=router;
