@@ -2,6 +2,7 @@ let express=require('express');
 let router=express.Router();
 let bcrypt=require('bcrypt');
 let {users}=require('../models/users');
+
 //localhost:3000/api/emp/register
 router.post("/register",async (req,res)=>{
     console.log(req.body);
@@ -31,7 +32,7 @@ let matchpass=await bcrypt.compare(req.body.password,result.password);
 router.get("/view task",(req,res)=>{
     res.send("view task page called");
 })
-router.put("/updatestatus",(req,res)=>{
+router.patch("/updatestatus/", (req,res)=>{
     res.send("update status page called");
 })
 

@@ -5,9 +5,6 @@ router.get("/viewemployees",async (req,res)=>{
     let result=await  users.find();
     res.send(result);
 });
-router.post("/assign-task",(req,res)=>{
-    res.send("assign task route called");
-})
 
 
 
