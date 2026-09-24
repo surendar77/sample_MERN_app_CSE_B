@@ -29,7 +29,7 @@ let matchpass=await bcrypt.compare(req.body.password,result.password);
 
 
 
-router.get("/view task",(req,res)=>{
+router.get("/viewtask",(req,res)=>{
     res.send("view task page called");
 })
 router.patch("/updatestatus/", (req,res)=>{
