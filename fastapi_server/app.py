@@ -1,21 +1,31 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-class Student(BaseModel):
-    name:str
-    email:str
-    age:int
-    mark:float
-
+from models import Student,Staff
+from database import student_collection,staff_collection
 app=FastAPI()
+#convert mongodb document into json format
+def student_details(Student):
+    return{
+        "id":str(Student["_id"]),
+        "name":Student["name"],
+        "email":Student["email"],
+        "age":Student["age"],
+        "mark":Student["mark"]
+    }
+
+
 #localhost:8000/getStudents
 @app.get("/getStudents")
 def getStudents():
-    return "get students api called"
+    students=student_collection.find()
+    return [student_details(student) for student in students]
 
 
-@app.post("/register")
+
+@app.post("/register")  
 def register(stu:Student):
-    return stu
+    result=student_collection.insert_one(stu.model_dump())
+    #model_dump used to convert object data to json data
+    return {"message":"data inserted success"}
 
 
 @app.put("/updateprofile")
