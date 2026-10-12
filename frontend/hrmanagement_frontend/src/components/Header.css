@@ -1,9 +1,9 @@
 .header{
-    width: 100%;
+    width:100%;
     height: 100%;
     background-color: black;
 }
-.header a{
+a{
     color: white;
     text-decoration: none;
     padding: 5px;
