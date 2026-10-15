@@ -5,7 +5,8 @@ function Header(){
         <div className="header">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>     
+          <Link to="/contact">Contact</Link>  
+          <Link to="/adminlogin">Admin login</Link>   
         </div>
     )
 }
