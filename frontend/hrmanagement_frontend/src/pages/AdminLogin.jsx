@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom"
 function AdminLogin(){
     let [username,setUsername]=useState("")
     let [password,setPassword]=useState("")
-    let [error,setError]=useState("")
-    
+    let [error,setError]=useState("")    
     let navigate=useNavigate()
     //function for onsubmit
     let login=(event)=>{
@@ -23,8 +22,7 @@ function AdminLogin(){
       <form onSubmit={login}>
 <input type="text" value={username} 
   onChange={(e)=>setUsername(e.target.value)}  
-     placeholder="Enter username"></input><br/>
-     
+     placeholder="Enter username"></input><br/>     
         <input type="password" 
         value={password} 
         onChange={(e)=>setPassword(e.target.value)} placeholder="Enter password"></input><br/>
