@@ -9,12 +9,16 @@ import Contact from './pages/contact'
 import AdminLogin from './pages/AdminLogin'
 import AdminHome from './pages/AdminHome'
 import {Routes,Route} from 'react-router-dom'
+
+import Register from './pages/Register'
+
 function App() {
     return (
     <div>
     <Header />
        <Routes>
           <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/register" element={<Register></Register>}></Route>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/contact" element={<Contact></Contact>}></Route>
 <Route path="/adminhome" element={<AdminHome></AdminHome>}></Route>
