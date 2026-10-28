@@ -11,6 +11,10 @@ import AdminHome from './pages/AdminHome'
 import {Routes,Route} from 'react-router-dom'
 
 import Register from './pages/Register'
+import Login from './pages/Login';
+
+import HrHome from './pages/HrHome'
+import EmpHome from './pages/EmpHome'
 
 function App() {
     return (
@@ -18,6 +22,9 @@ function App() {
     <Header />
        <Routes>
           <Route path="/" element={<Home></Home>}></Route>
+      <Route path="/login" element={<Login></Login>}></Route>
+      <Route path="/emphome" element={<EmpHome></EmpHome>}></Route>
+      <Route path="/hrhome" element={<HrHome></HrHome>}></Route>
           <Route path="/register" element={<Register></Register>}></Route>
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/contact" element={<Contact></Contact>}></Route>
