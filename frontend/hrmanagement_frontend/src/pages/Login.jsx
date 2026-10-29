@@ -12,6 +12,8 @@ function Login(){
        event.preventDefault()
        if(email=="admin@gmail.com" && password=="admin"){
            //navigate to admin home
+localStorage.setItem("currentuser",
+     JSON.stringify({"name":"admin","role":"admin"}))
            navigate("/adminhome")
        }else{
           //check with my db credentials
@@ -25,8 +27,11 @@ function Login(){
     console.log(data)
     if(data.user){
         if(data.user.role=="HR"){
+    localStorage.setItem("currentuser",JSON.stringify(data.user));
              navigate("/hrhome")
         }else{
+    localStorage.setItem("currentuser",JSON.stringify(data.user));
+
            navigate("/emphome")
         }
     }else{
