@@ -1522,6 +1522,101 @@ C=> Controller (Action)
 
 
 
+14/10/2026
+
+Topics:
+1.Bootstrap implementation in react(images)
+2.React forms(Event handling)
+3.State in React
+
+
+Note:
+  1.open sample_mern_app in vscode from GitHub desktop
+  2. right click hrmgmt_frontend => open in integrated terminal
+
+
+open browser download 3 images
+
+
+copy & paste those images in src => assets in your project folder
+
+rename your images in short
+
+like => img1.jpg
+
+
+in home.jsx
+
+(replace with your image name and extention
+
+import img1 from '../assets/img1.jpg'
+import img2 from '../assets/img2.avif'
+import img3 from '../assets/img3.jpg'
+
+
+
+
+state
+   -useState
+       -used to render a particular form field
+       -used to store input of form field without any action
+
+
+event handling
+  
+onChange
+onSubmit
+
+
+
+
+
+
+
+
+
+
+15/10/2026
+
+Topics:
+  1.Admin Login page & navigating after login
+
+inside src => pages folder
+     -AdminLogin.jsx
+     -AdminHome.jsx
+
+
+useNavigate => it will redirect from one page to another page after some
+		condition
+
+
+
+
+
+
+
+
+
+
+
+  2.Project work
+
+
+open your project folder from GitHub desktop
+
+1.create new react project
+   npm create vite@latest  yourproject name
+eg:
+  npm create vite@latest medisearch
+2.once project created stop the execution
+    cd projectname in your terminal
+3. download the below packages
+      npm install react-router-dom
+      npm install bootstrap
+4. create header & Footer
+5. define menu's for your page
+6. define pages and create pages for your project
+7. congire routing for all the pages
 
 
 
@@ -1539,6 +1634,9 @@ C=> Controller (Action)
 
 
 
+Note:
+  1.open sample_mern_app in vscode from GitHub desktop
+  2. right click hrmgmt_frontend => open in integrated terminal
 
 
 
@@ -1549,6 +1647,41 @@ C=> Controller (Action)
 
 
 
+22/10/2026
+
+Revise last two weeks topics
+
+
+
+
+
+
+26/10/2026
+
+Connectivity between frontend(React) and backend(ExpressJs)
+
+Note:
+  1.open sample_mern_app in vscode from GitHub desktop
+  2. right click hrmanagement_frontend => open in integrated terminal
+  3.inside src folder => pages folder create  new file
+       1.Register.jsx
+  4.open mongodb compass and connect it
+
+
+
+
+
+
+
+cors
+  =>cross browser scripting
+  => permission to access the backend
+ 
+localhost:27017 => mongodb
+
+localhost:3000 => expressjs
+
+localhost:5173 => react
 
 
 
@@ -1558,9 +1691,117 @@ C=> Controller (Action)
 
 
 
+url: localhost:3000/api/emp/register
+method:POST
+json format
+datas : name,email,password,role(HR,EMPLOYEE)
 
 
 
+
+28/10/2026
+
+https://github.com/surendar77/sample_MERN_app_CSE_B
+
+Connecting frontend with backend part-II
+login page and role based menu's on home page
+
+Note:
+  1.open sample_mern_app in vscode from GitHub desktop
+  2.right click hrmgmt_frontend => open in integrated terminal
+        run frontend also => npm run dev
+  3.open mongodb compass and connect it
+  4.right click index.js => open in integrated terminal then run backend by below command
+ 	nodemon index.js
+
+inside  src => pages 
+Create 4 new files
+Login.jsx
+HrHome.jsx
+EmpHome.jsx
+AdminHome.jsx
+
+
+
+29/10/2026
+
+https://github.com/surendar77/sample_MERN_app_CSE_B
+
+Connecting frontend with backend part-III
+   -session handling
+   -separate menu's each role
+   -fetch data from backend
+
+
+Note:
+  1.open sample_mern_app in vscode from GitHub desktop
+  2.right click hrmgmt_frontend => open in integrated terminal
+        run frontend also => npm run dev
+  3.open mongodb compass and connect it
+  4.right click index.js => open in integrated terminal then run backend by below command
+ 	nodemon index.js
+
+
+
+
+
+
+
+localStorage
+   => it will take and store the particular user details
+
+
+localStorage.setItem() => assign the values in localstorage
+localStorage.getItem() => used to fetch the details of localstroage
+localStorage.removeItem() => used to clear your localstroage variable values
+
+JSON.stringify => used to convert data into json format
+JSON.parse => used to convert json format to string data
+
+
+
+comman menus => home,about contact
+
+if not logged in => register & login menu
+
+if logged in
+
+emp menus  => viewtask , add todo,Logout
+
+hr menus   => assign task,view employees,Logout
+
+admin menus => view employees,view tasks ,Logout
+
+
+
+
+
+
+
+
+useLocation => it used to render your menubar(reloading)
+
+
+
+
+
+
+
+
+
+design your pages using AI(chatgpt)
+
+first 
+
+header.jsx
+
+copy entire code and paste in chatgpt give below prompt
+
+update with attractive and responsive css(bootstrap) for the above code
+
+Note:
+  do same for all the pages
+Footer.jsx,Home,about,contact,login,register,hrhome,adminhome,emphome
 
 
 
