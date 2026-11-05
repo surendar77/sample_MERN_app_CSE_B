@@ -1804,7 +1804,23 @@ Note:
 Footer.jsx,Home,about,contact,login,register,hrhome,adminhome,emphome
 
 
+02/11/2026
 
+https://github.com/surendar77/sample_MERN_app_CSE_B
+
+Project work
+
+Backend
+  -define  your project roles 
+  -define database and tables in mongodb
+  -create model files for each table
+  -create routes for that individually and connect with database	
+  -Complete all basic CRUD operations
+  -enable cors for backend and run backend
+Front-end
+   -create the UI for all pages
+   -create menu's based on your page and navigate to the pages
+   -connect with backend using fetch method
 
 
 
