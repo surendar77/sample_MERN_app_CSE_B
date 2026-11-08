@@ -1218,7 +1218,7 @@ server.listen(3000,'127.0.0.1',()=>{
 });
 
 open browser type in url
- https://sample-mern-app-cse-b.onrender.com/
+ localhost:3000/
  then press enter
 
 
@@ -1241,11 +1241,11 @@ nodemon app.js
 
 
 
-https://sample-mern-app-cse-b.onrender.com/home
+localhost:3000/home
     => home page is working
-https://sample-mern-app-cse-b.onrender.com/aboutus
+localhost:3000/aboutus
    => about page is working
-https://sample-mern-app-cse-b.onrender.com/contactus
+localhost:3000/contactus
    => contact page is working
 
 
@@ -1304,9 +1304,9 @@ steps:
 1.create a server
 2.run the sever
 3.create get method with route(getStudents)
-     https://sample-mern-app-cse-b.onrender.com/getStudents =>GET
+     localhost:3000/getStudents =>GET
 4.create post method with route(addStudent)
-     https://sample-mern-app-cse-b.onrender.com/addStudents => POST
+     localhost:3000/addStudents => POST
 5.run the post method in postman tool
 6. collect data from postman to nodejs
 7. make connection with mongodb
@@ -1418,16 +1418,16 @@ roles
    employee(register,login,viewtask,updatestatus)
 
 hr_routes
-  https://sample-mern-app-cse-b.onrender.com/api/hr/viewemployees => GET
-  https://sample-mern-app-cse-b.onrender.com/api/hr/assign-task  =>post
-  https://sample-mern-app-cse-b.onrender.com/api/hr/viewtasks => GET
-  https://sample-mern-app-cse-b.onrender.com/api/hr/deleteEmp => Delete
+  localhost:3000/api/hr/viewemployees => GET
+  localhost:3000/api/hr/assign-task  =>post
+  localhost:3000/api/hr/viewtasks => GET
+  localhost:3000/api/hr/deleteEmp => Delete
 
 employee_routes 
-  https://sample-mern-app-cse-b.onrender.com/api/employee/register  =>POST
-  https://sample-mern-app-cse-b.onrender.com/api/employee/login => POST
-  https://sample-mern-app-cse-b.onrender.com/api/employee/viewtask => GET       
-  https://sample-mern-app-cse-b.onrender.com/api/employee/updatestatus => PUT
+  localhost:3000/api/employee/register  =>POST
+  localhost:3000/api/employee/login => POST
+  localhost:3000/api/employee/viewtask => GET       
+  localhost:3000/api/employee/updatestatus => PUT
 
 
 create employee routes and import in index.js file
@@ -1679,7 +1679,7 @@ cors
  
 localhost:27017 => mongodb
 
-https://sample-mern-app-cse-b.onrender.com => expressjs
+localhost:3000 => expressjs
 
 localhost:5173 => react
 
@@ -1691,7 +1691,7 @@ localhost:5173 => react
 
 
 
-url: https://sample-mern-app-cse-b.onrender.com/api/emp/register
+url: localhost:3000/api/emp/register
 method:POST
 json format
 datas : name,email,password,role(HR,EMPLOYEE)
@@ -1821,6 +1821,119 @@ Front-end
    -create the UI for all pages
    -create menu's based on your page and navigate to the pages
    -connect with backend using fetch method
+
+
+
+For project review(10 mins)
+	-Theme of the project
+	-roles in the project
+	-packages used
+	-Demo
+	-viva question
+
+
+marks
+
+Presentation -5
+Implementation-5
+Viva questions-5
+Github upload-5
+
+
+
+
+
+
+05/11/2026
+
+project deployement in render and versel
+
+steps:
+1.open browser and search for mongodb atlas 
+  => Get started=>do signup(use google signup)
+2.open browser and search for render and do signup by github button
+3.ensure project uploaded  in github
+
+
+
+
+
+
+step for deploy project
+
+1.mongodb atlas => cloud database(paid one)
+
+  localhost:27017 => local mongodb
+
+open mongodb atlas
+
+=> add cluster
+=> free cluster
+=> create deployment
+
+=> next page => 3rd step => create username and password
+                               => note in notepad
+
+=> choose connection method
+
+=> copy connection string 
+
+
+mongodb:srv://<db_username>:
+
+mongodb+srv://xyz1597901_db_user:YDvL0FO840xKjAcq@cluster0.otukjyc.mongodb.net/
+
+
+
+1.replace your local mongodb url to online mongodb atlas url
+
+2.deploy your backend in cloud platform(render)
+
+3.copy backend url after deployment and replace in frontend for connection
+
+
+
+
+
+
+
+
+
+in mongodb atlas
+
+left side menu
+ 
+choose security => database & network access
+
+choose ip access list => add ip access list entry
+
+   0.0.0.0
+
+
+in start command
+
+
+npm run dev -- --port 5000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
